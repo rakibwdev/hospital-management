@@ -9,6 +9,6 @@ class CompanyController extends Controller
 {
     public function company(){
 $company = Company::all();
-return view('');
+return view('CompanyView', compact('company'));
     }
 }
