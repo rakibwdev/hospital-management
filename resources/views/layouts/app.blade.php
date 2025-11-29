@@ -29,6 +29,8 @@
 
     {{-- Shared Navigation --}}
 @include('layouts.nav')
-
+<div class="content">
+    @yield('content')
+</div>
 </body>
 </html>
