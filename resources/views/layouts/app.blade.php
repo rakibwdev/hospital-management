@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+<title>@yield('title')</title>
 <style>
         /* Simple navbar */
         .navbar {
@@ -27,7 +27,8 @@
 
 <body>
 
-
+    {{-- Shared Navigation --}}
+@include('layouts.nav')
 
 </body>
 </html>
