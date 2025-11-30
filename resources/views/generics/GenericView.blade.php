@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+@extends('layouts.app')
 <head>
     <meta charset="UTF-8">
-    <title>Generics List</title>
-
+@section('title', 'Generics List')
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,7 +54,8 @@
         }
     </style>
 </head>
-
+@section('content')
+    
 <body>
 
     <h1>All Generic Data</h1>
@@ -83,5 +83,6 @@
     </div>
 
 </body>
+@endsection
 
 </html>
