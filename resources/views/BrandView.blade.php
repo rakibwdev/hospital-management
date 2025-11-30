@@ -33,7 +33,8 @@
             border-radius: 6px;
         }
 
-        th, td {
+        th,
+        td {
             padding: 12px 15px;
             text-align: center;
         }
@@ -54,34 +55,36 @@
     </style>
 </head>
 @extends('layouts.app')
-@section('title','Brand List')
+@section('title', 'Brand List')
 @section('content')
-<body>
 
-    <h1>All Brand List</h1>
+    <body>
 
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Brand Name</th>
-                    <th>Price (৳)</th>
-                </tr>
-            </thead>
+        <h1>All Brand List</h1>
 
-            <tbody>
-                @foreach ($brands as $brand)
+        <div class="table-container">
+            <table>
+                <thead>
                     <tr>
-                        <td>{{ $brand->id }}</td>
-                        <td>{{ $brand->name }}</td>
-                        <td>{{ number_format($brand->price) }}</td>
+                        <th>ID</th>
+                        <th>Brand Name</th>
+                        <th>Price (৳)</th>
                     </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+                </thead>
 
-</body>
+                <tbody>
+                    @foreach ($brands as $brand)
+                        <tr>
+                            <td>{{ $brand->id }}</td>
+                            <td>{{ $brand->name }}</td>
+                            <td>{{ number_format($brand->price) }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+    </body>
 @endsection
+
 </html>
