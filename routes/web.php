@@ -9,5 +9,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/generics', [GenericController::class,'index']);
-Route::get('/brand', [BrandController::class,'brands'] );
-Route::get('/company', [CompanyController::class,'companys'] );
+Route::get('/brands', [BrandController::class,'brands'] );
+Route::get('/companies', [CompanyController::class,'company'] );
