@@ -6,7 +6,7 @@ use App\Http\Controllers\GenericController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Dashboard');
 });
 Route::get('/generics', [GenericController::class,'index']);
 Route::get('/brands', [BrandController::class,'brands'] );
