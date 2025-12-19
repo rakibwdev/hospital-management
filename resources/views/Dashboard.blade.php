@@ -17,7 +17,12 @@
                         <p>Total Brands</p>
                     </div>
                 </div>
-
+                <div class="col-md-4">
+                    <div class="card bg-success text-white p-3">
+                        <h3>{{ $companyCount }}</h3>
+                        <p>Total Companies</p>
+                    </div>
+                </div>
             </div>
         </div>
     @endsection
