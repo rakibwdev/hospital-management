@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 @extends('layouts.app')
-@section('title', 'Dashboard');
-
+@section('title', 'Dashboard')
 
 <body>
-
     @section('content')
             <h1>?Dashboard?</h1>
             <hr>

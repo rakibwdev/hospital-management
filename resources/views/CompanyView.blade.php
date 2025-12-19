@@ -3,7 +3,7 @@
 @extends('layouts.app')
 
 <head>
-    <meta charset="UTF-8">
+    {{-- <meta charset="UTF-8"> --}}
     @section('title', 'Company List')
     <style>
         body {
