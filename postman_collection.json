@@ -28,27 +28,7 @@
                 }
             }
         },
-        // {
-        //     "name": "Create User",
-        //     "request": {
-        //         "method": "POST",
-        //         "header": [],
-        //         "body": {
-        //             "mode": "raw",
-        //             "raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"john@example.com\",\n    \"password\": \"secret\"\n}",
-        //             "options": {
-        //                 "raw": {
-        //                     "language": "json"
-        //                 }
-        //             }
-        //         },
-        //         "url": {
-        //             "raw": "{{base_url}}/api/users",
-        //             "host": ["{{base_url}}"],
-        //             "path": ["api", "users"]
-        //         }
-        //     }
-        // }
+       
         {
             "name": "Create User",
             "request":{
@@ -56,7 +36,17 @@
                 "header": [],
                 "body":{
                     "mode":"raw",
-                    "raw":"{}"
+                    "raw": "{\n \"name\": \"rakib\", \n \"email\": \"rakib@gmail.com\", \n \"password\": \"secreat\"\n}",
+                    "options":{
+                        "raw": {
+                            "language":"json"
+                        }
+                    }
+                },
+                "url":{
+                    "raw":"{{base_url}}/api/users",
+                    "host":["{{base_url}}"],
+                    "path":["api", "users"]
                 }
             }
         }
