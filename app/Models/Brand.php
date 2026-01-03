@@ -32,8 +32,8 @@ class Brand extends Model
     //     return $this->filterByDate($query, $date);
     // }
 
-    public function scopeApiFilter($query, $data){
-        
+    public function scopeApiFilter($query, $date){
+        return $this->filterByDate($query,$date);
     }
     public function scopeFilter($query, $search, $company_id, $generic_id)
     {
