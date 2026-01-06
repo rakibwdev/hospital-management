@@ -37,7 +37,8 @@ class Brand extends Model
             $query->where('name', 'like', '%' . $search . '%');
         // })->when($company_id, function ($query) use ($company_id) {
         //     $query->where('company_id', $company_id);
-        })->when($company_id,function());
+        })->when($company_id,function($query)use ($company_id){
+            $query->where('company_id',$company_id);
         })->when($generic_id, function ($query) use ($generic_id) {
             $query->where('generic_id', $generic_id);
         });
