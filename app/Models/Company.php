@@ -32,7 +32,8 @@ class Company extends Model
 
     public function brands(): HasMany
     {
-        return $this->hasMany(Brand::class, 'company_id', 'id');
+        // return $this->hasMany(Brand::class, 'company_id', 'id');
+        return $this->hasMany();
     }
 
     protected $casts = [
