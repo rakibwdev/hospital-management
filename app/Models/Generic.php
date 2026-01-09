@@ -27,7 +27,7 @@ class Generic extends Model
         //     $query->where('name', 'like', '%' . $search . '%');
         // });
         return $query->when($search,function($query,$search){
-
+$query->where('name','like','%' .$search . '%');
         });
     }
 
