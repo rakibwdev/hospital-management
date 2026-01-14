@@ -10,7 +10,6 @@ class GenericController extends Controller
     public function index()
     {
         $generics = Generic::all();
-        // return view('generics.genericView', compact('generics'));
         return view('generics.genericView', compact('generics'));
     }
 }
