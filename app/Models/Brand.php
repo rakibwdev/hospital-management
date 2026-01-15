@@ -29,7 +29,6 @@ class Brand extends Model
     ];
     public function scopeApiFilter($query, $date)
     {
-        // return $this->filterByDate($query, $date);
         return $this->filterByDate($query, $date);
     }
     public function scopeFilter($query, $search, $company_id, $generic_id)
@@ -45,6 +44,7 @@ class Brand extends Model
 
     public function company(): BelongsTo
     {
+        // return $this->belongsTo(Company::class);
         return $this->belongsTo(Company::class);
     }
     public function generic(): BelongsTo
