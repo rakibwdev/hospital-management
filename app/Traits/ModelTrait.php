@@ -12,7 +12,10 @@ trait ModelTrait
         //     $query->orWhere('deleted_at', '>=', $date);
         // });
         return $query->when($date, function($query, $date){
+$query->where('created_at','>=', $date);
 
+$query->orWhere('updated_at','>=',$date);
+$query->orWhere('deleted_at', '>=', $date);
         });
     }
 
