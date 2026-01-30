@@ -48,7 +48,6 @@ class Brand extends Model
     }
     public function generic(): BelongsTo
     {
-        // return $this->belongsTo(Generic::class);
         return $this->belongsTo(Generic::class);
     }
 }
